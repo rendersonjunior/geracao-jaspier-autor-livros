@@ -92,8 +92,8 @@ public class Main {
             // Criação de PDF
             OutputStream outputStream = new FileOutputStream(new File(outputFile));
             JasperExportManager.exportReportToPdfStream(print, outputStream);
-
             System.out.println("Arquivo .pdf gerado.");
+
         } catch (JRException e) {
             e.printStackTrace();
         } catch (FileNotFoundException ex) {
